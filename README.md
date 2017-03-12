@@ -1,4 +1,4 @@
-<h1>E-Wallet / Web-Wallet Application on MEAN Stack</h1>
+<h1><img src="./logo/node.png"></img>E-Wallet / Web-Wallet Application on MEAN Stack</h1>
 <h2>Node Server on PORT 3000</h2>
 <h2>Angular Live Deployment Server on PORT 4200</h2>
 <h2>MongoDb DB name meanapp (user schema in models/users.js)</h2>
