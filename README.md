@@ -1,26 +1,8 @@
 <h1>E-Wallet / Web-Wallet Application on MEAN Stack</h1>
 <h2>Node Server on PORT 3000</h2>
-<h2><h2>Angular Live Deployment Server on PORT 4200</h2>
+<h2>Angular Live Deployment Server on PORT 4200</h2>
 <h2>MongoDb DB name meanapp (user schema in models/users.js)</h2>
 
-<h4>
-{
-
-  "name": "meanapp",
-  
-  "version": "1.0.0",
-  
-  "description": "mean stack authentication app",
-  
-  "main": "app.js",
-  
-  "scripts": {
-  
-    "test": "echo \"Error: no test specified\" && exit 1",
-    
-  	"start": "node app"
-    
-  },
   "dependencies":{
   
   	"express":"*",
@@ -47,4 +29,3 @@
   
 }
 
-</h4>
