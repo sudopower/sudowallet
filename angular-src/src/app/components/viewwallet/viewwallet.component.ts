@@ -3,12 +3,13 @@ import {AuthService} from '../../services/auth.service';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  selector: 'app-viewwallet',
+  templateUrl: './viewwallet.component.html',
+  styleUrls: ['./viewwallet.component.css']
 })
-export class ProfileComponent implements OnInit {
+export class ViewwalletComponent implements OnInit {
 user:Object;
+
   constructor(private authService: AuthService,
   private router: Router) { }
 
@@ -20,15 +21,6 @@ user:Object;
   console.log(err);
   return false;
   });
-  }
-
-  changePassword(){
-  var ip = document.getElementById("newpwd1");
-  if (ip.style.display == 'none') {
-        ip.style.display = 'inline';
-    } else {
-        ip.style.display = 'none';
-    }
   }
 
 }

@@ -15,13 +15,21 @@ import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard';
+import { AddtowalletComponent } from './components/addtowallet/addtowallet.component';
+import { PaymoneyComponent } from './components/paymoney/paymoney.component';
+import { SendmoneyComponent } from './components/sendmoney/sendmoney.component';
+import { ViewwalletComponent } from './components/viewwallet/viewwallet.component';
 
 const appRoutes: Routes = [
 {path:'', component: HomeComponent},
 {path:'register', component: RegisterComponent},
 {path:'login', component: LoginComponent},
 {path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
-{path:'profile', component: ProfileComponent, canActivate:[AuthGuard]}
+{path:'profile', component: ProfileComponent, canActivate:[AuthGuard]},
+{path:'addtowallet', component: AddtowalletComponent, canActivate:[AuthGuard]},
+{path:'paymoney', component: PaymoneyComponent, canActivate:[AuthGuard]},
+{path:'sendmoney', component: SendmoneyComponent, canActivate:[AuthGuard]},
+{path:'viewwallet', component: ViewwalletComponent, canActivate:[AuthGuard]}
 ]
 
 @NgModule({
@@ -32,7 +40,11 @@ const appRoutes: Routes = [
     RegisterComponent,
     HomeComponent,
     DashboardComponent,
-    ProfileComponent
+    ProfileComponent,
+    AddtowalletComponent,
+    PaymoneyComponent,
+    SendmoneyComponent,
+    ViewwalletComponent
   ],
   imports: [
     BrowserModule,

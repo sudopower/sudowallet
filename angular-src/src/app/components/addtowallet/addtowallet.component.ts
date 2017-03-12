@@ -3,11 +3,11 @@ import {AuthService} from '../../services/auth.service';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  selector: 'app-addtowallet',
+  templateUrl: './addtowallet.component.html',
+  styleUrls: ['./addtowallet.component.css']
 })
-export class ProfileComponent implements OnInit {
+export class AddtowalletComponent implements OnInit {
 user:Object;
   constructor(private authService: AuthService,
   private router: Router) { }
@@ -21,9 +21,9 @@ user:Object;
   return false;
   });
   }
-
   changePassword(){
-  var ip = document.getElementById("newpwd1");
+
+  var ip = document.getElementById("newpwd");
   if (ip.style.display == 'none') {
         ip.style.display = 'inline';
     } else {
