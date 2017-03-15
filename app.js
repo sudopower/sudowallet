@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
-const config = require('./config/database');
+const config = require('./config/database');    
 
 //Connect to Database
 mongoose.Promise = global.Promise;
