@@ -1,3 +1,25 @@
-<p>
-  paymoney works!
-</p>
+<style>
+label{
+  font-size: 15px;
+  }</style>
+  <div *ngIf="user"> <p>
+
+  </p>
+  <div class="col-md-4 text-center col-md-offset-4">
+  <div class="jumbotron text-center">
+  <h2 class="page-header">Send Money to Merchants</h2>
+  <form action="#" method="post">
+
+    <div class="form-group ">
+      <label>Merchant Id</label>
+      <input type="email" class="form-control" name="username" required>
+      <br>
+
+      <label>Amount</label>
+      <input type="text" class="form-control" id="amount">
+    </div>
+    <input type="submit"  class="btn btn-primary" value="Send">
+    <input type="hidden" id="balance" value="{{user.balance}}">
+  </form>
+</div>
+</div>

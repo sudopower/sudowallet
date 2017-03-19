@@ -4,30 +4,20 @@
     <h2 class="page-header">Hello {{user.name}} !</h2>
   </div>
   <div class="h4 text-left row">
-    <ul class="col-md-4  list-group">
+<div class="col-md-12">
+  <ul class="col-md-4"></ul>
+    <ul class="  col-md-4 list-group">
       <li class="list-group-item text-info"><strong>Profile Details</strong></li>
       <li class="list-group-item">Username: {{user.username}}</li>
         <li class="list-group-item">Email: {{user.email}}</li>
-        <li class="list-group-item">Password: <input type="text" id="newpwd1" style="display:none; margin-bottom: 5px;" class="form-control"> <button type="button" class="btn btn-success" ng-click="changePassword();">Change password</button>
+        <li class="list-group-item">Password:
+          <input type="password" id="newpwd1" style="display:none; margin-bottom: 5px;" class="form-control">
+           <button type="button" class="btn btn-success" (click)="changePassword()">Change password</button>
         </li>
 
     </ul>
-    <ul class="col-md-4  list-group">
-      <li class="list-group-item text-info"><strong>Wallet Details</strong></li>
-      <li class="list-group-item">Username: {{user.username}}</li>
-        <li class="list-group-item">Email: {{user.email}}</li>
-        <li class="list-group-item">Password: <input type="text" id="newpwd2" style="display:none; margin-bottom: 5px;" class="form-control"> <button type="button" class="btn btn-success" (click)="changePassword(this.id);">Change password</button>
-        </li>
+  </div>
 
-    </ul>
-    <ul class="col-md-4  list-group">
-      <li class="list-group-item text-info"><strong>Profile Details</strong></li>
-      <li class="list-group-item">Username: {{user.username}}</li>
-        <li class="list-group-item">Email: {{user.email}}</li>
-        <li class="list-group-item">Password: <input type="text" id="newpwd3" style="display:none; margin-bottom: 5px;" class="form-control"> <button type="button" class="btn btn-success" (click)="changePassword(this.id);">Change password</button>
-        </li>
-
-    </ul>
   </div>
   </div>
 </div>

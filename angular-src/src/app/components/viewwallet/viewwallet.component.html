@@ -1,6 +1,18 @@
-<h2 class="page-header">viewwallet</h2>
-<div *ngIf="user"> <p>
-  addtowallet works!
-  {{user.balance}}
-</p>
-<div>
+<div *ngIf="user">
+  <div class="jumbotron text-center">
+    <div class="row">
+    <h2 class="page-header">Hello {{user.name}} !</h2>
+  </div>
+  <div class="h4 text-left row">
+    <ul class="col-md-4"></ul>
+    <ul class="col-md-4  list-group">
+      <li class="list-group-item text-info"><strong>Wallet Details</strong></li>
+      <li class="list-group-item">Username: {{user.username}}</li>
+        <li class="list-group-item">Balance: {{user.balance}}</li>
+
+
+    </ul>
+
+  </div>
+  </div>
+</div>

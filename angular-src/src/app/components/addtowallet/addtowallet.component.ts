@@ -15,6 +15,8 @@ user:Object;
   ngOnInit() {
   this.authService.getProfile().subscribe(profile=>{
   this.user = profile.user;
+  var username = profile.user.name;
+  console.log(username);
   },
   err => {
   console.log(err);
@@ -29,6 +31,12 @@ user:Object;
     } else {
         ip.style.display = 'none';
     }
+  }
+
+  addmoney(){
+  var ip = document.getElementById("amount");
+  console.log(ip);
+
   }
 
 }

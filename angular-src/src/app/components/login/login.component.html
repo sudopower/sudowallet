@@ -1,12 +1,20 @@
-<h2 class="page-header">Login</h2>
+<style>
+label{
+  font-size: 15px;
+  }</style>
+<div class="col-md-4 text-center col-md-offset-4">
+    <div class="jumbotron text-center">
+      <h2 class="page-header">Login</h2>
 <form (submit)="onLoginSubmit()">
   <div class="form-group">
     <label>Username</label>
-    <input type="text" class="form-control" [(ngModel)]="username" name="username">
+    <input type="text" class="form-control" [(ngModel)]="username" name="username" required>
   </div>
   <div class="form-group">
     <label>Password</label>
-    <input type="password" class="form-control" [(ngModel)]="password" name="password">
+    <input type="password" class="form-control" [(ngModel)]="password" name="password" required>
   </div>
   <input type="submit" class="btn btn-primary" value="Login">
 </form>
+</div>
+</div>
