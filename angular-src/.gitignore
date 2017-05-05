@@ -5,8 +5,8 @@
 /tmp
 
 # dependencies
-/node_modules
-
+/node_modules 
+   
 # IDEs and editors
 /.idea
 .project
