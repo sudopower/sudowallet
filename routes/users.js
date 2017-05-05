@@ -20,7 +20,7 @@ Customer.findOne({}, function (err, data){
 	var add = req.params.amount;
 	user.balance = 123456;
 
-	customer.save(function(err, data){
+	customer.save(function(err, data){  
 		if(err)
 		throw err;
 		res.json(data);
