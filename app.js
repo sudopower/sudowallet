@@ -12,7 +12,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect(config.database);
 
 
-//On Connection
+//On Connection 
 mongoose.connection.on('connected',() =>{
 	console.log('connected to database '+config.database);
 });
